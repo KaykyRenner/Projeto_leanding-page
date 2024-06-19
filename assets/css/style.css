@@ -5,6 +5,10 @@
 font-family: "Montserrat", sans-serif;
 font-family: "Open Sans", sans-serif;
 */
+:root{
+    --gap: 3rem;
+    --primary-color: #0a1128;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -35,16 +39,52 @@ h5{
 h6{
     font-size: 3.5rem;
 }
+a{
+    text-decoration: none;
+}
 body{
-    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-size: 2rem;
     font-family: "Open Sans", sans-serif;
 }
 .main-bg{
+    color: white;
     background-image: url(../img/confetti-doodles.png);
     background-size: cover;
     background-position: center center;
 }
 .main-content{
+    padding: var(--gap);
     margin: 0px auto;
     max-width: 1200px;
+}
+.section {
+    
+    min-height: 100vh;
+}
+.menu{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+.menu-content{
+    justify-content: space-around;
+    display: flex;
+}
+.menu h1{
+    color: var(--primary-color);
+    font-size: 2.3rem;
+}
+.menu h1 a{
+    color: inherit;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+.menu ul li a{
+
 }
