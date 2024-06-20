@@ -8,12 +8,14 @@ font-family: "Open Sans", sans-serif;
 :root{
     --gap: 3rem;
     --primary-color: #0a1128;
+    --ligth--gray-color: #EEEEEE;
 }
 *{
     margin: 0px;
     padding: 0px;
 }
 html{
+    scroll-behavior: smooth;
     font-size: 62.5%;
 }
 h1,h2,h3,h4,h5,h6{
@@ -24,8 +26,10 @@ h1{
     text-transform: uppercase;
 }
 h2{
-    font-size: 5.5rem;
-    
+    text-transform: uppercase;
+    font-size: 6rem;
+    margin-bottom: 50px;
+    line-height: 1.2;
 }
 h3{
     font-size: 5rem;
@@ -42,27 +46,40 @@ h6{
 a{
     text-decoration: none;
 }
+p{
+    margin-bottom: 30px;
+}
 body{
+    line-height: 1.5;
     color: var(--primary-color);
     font-size: 2rem;
     font-family: "Open Sans", sans-serif;
 }
 .main-bg{
+    
     color: white;
     background-image: url(../img/confetti-doodles.png);
     background-size: cover;
     background-position: center center;
+}
+.white-bg{
+    color: var(--primary-color);
+    background-color: white;
 }
 .main-content{
     padding: var(--gap);
     margin: 0px auto;
     max-width: 1200px;
 }
-.section {
-    
+.section {  
     min-height: 100vh;
 }
+.menu-spacing{
+    height: 65px;
+}
 .menu{
+    z-index: 1;
+    border-bottom: 1px solid var(--ligth--gray-color);
     background-color: white;
     position: fixed;
     top: 0;
@@ -71,6 +88,10 @@ body{
     width: 100%;
 }
 .menu-content{
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
     justify-content: space-around;
     display: flex;
 }
@@ -86,5 +107,55 @@ body{
     display: flex;
 }
 .menu ul li a{
+    position: relative;
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0%;
+    height: 0.2rem;
+    background: blue;
+    transition: all 300ms ease-in-out;
+}
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
 
+.intro-content{
+    top: 50px;
+    height: 100%;
+    position: relative;
+    gap: var(--gap);
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro-text-content, .intro-img{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap ;
+    justify-content: center;
+}
+.intro-img {
+    flex: 1;
+    height: 100%;
+}
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+}
+.top3-content{
+    text-align: center;
+    max-width: 640px;
+    align-items: center;
+    display: flex;
+    flex-direction: column ;
+    height: 100%;  
 }
