@@ -2,5 +2,11 @@
     .flex{
         flex-direction: column;
     }
-    
+    nav{
+        display: none;
+    }
+    .intro-content{
+        top: 0;
+        flex-direction: column;
+    }
 }

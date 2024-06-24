@@ -11,6 +11,7 @@ font-family: "Open Sans", sans-serif;
     --ligth--gray-color: #EEEEEE;
 }
 *{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
@@ -202,5 +203,84 @@ body{
     transition: all 300ms ease-in-out;
 }
 .galleryimg img:hover{
-    transform: translate(30px,0);
+    transform: translate(0,3%) scale(1.2) rotate(5deg);
 }
+.table-responsive{
+    overflow: hidden;
+    overflow-x: auto;
+}
+table{
+    min-width: 400px;
+    width: 100%;
+    border-collapse: collapse;
+}
+caption{
+    width: 24%;
+    margin-bottom:10px ;
+    background-color:var(--ligth--gray-color);
+    text-align: left;
+    font-size:0.7em;
+}
+thead{
+    text-align: left;
+    font-weight: bolder;
+    background-color:var(--ligth--gray-color);
+}
+td, th{
+    text-align: left;
+    border: 1px solid black;
+    padding: 5px;
+}
+tfoot{
+    text-align: left;
+}
+.contact-form fieldset{
+    gap: var(--gap);
+    display: flex;
+    border: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.contact-form fieldset label{
+    display: block;
+}
+.contact-form fieldset input{
+    padding: 10px;
+}
+.contact-form fieldset button{
+    padding: 10px;
+
+}
+.from-group0, .from-group2, .from-group3{
+    display: flex;
+    flex-direction: column;
+}
+.from-group1{
+    gap: var(--gap);
+    flex-direction: row;
+    display: flex;
+}
+.from-group3{
+    width: 100%;
+}
+input, textarea{
+    font-size: 1em;
+}
+input, textarea::
+fieldset button{
+    border: 0.5rem solid white;
+    background: none;
+    color: white;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    font-size: 20px;
+    transition:all 300ms ease-in-out
+}
+fieldset button:hover{
+    border: 0.5rem solid white ;
+    background: white;
+    color: var(--primary-color);
+}
+

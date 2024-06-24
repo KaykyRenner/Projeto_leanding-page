@@ -14,18 +14,19 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#intro">intro</a>
-                    </li>
-                    <li>
-                        <a href="#top3">top3</a>
+                        <a href="#top3">intro</a>
                     </li>
                     <li><a href="#flex">flex</a></li>
                     <li>
-                        <a href="#">gallery</a>
+                        <a href="#gallery">gallery</a>
                     </li>
                     <li>
-                        <a href="">contact</a>
+                        <a href="#flex2">flex2</a>
                     </li>
+                    <li>
+                        <a href="#pricing">pricing</a>
+                    </li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -72,7 +73,7 @@
     </section>
     <section id="gallery" class="white-bg">
         <div class="main-content">
-            <h2>my flex</h2>
+            <h2>gallery</h2>
             <p>uma breve descrição</p>
             <div class="flex fleximg " style="margin-bottom: 20px;">
                 <div class="galleryimg">
@@ -98,5 +99,114 @@
                 </div>
         </div>
     </section>
+</section>
+<section id="flex2" class="flex main-bg section">
+    <div class="main-content flex-one-content">
+        <h2>my flex 2</h2>
+        <p>uma breve descrição</p>
+        <div class="flex">
+            <article >
+                <h3>teste 1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet quas velit reprehenderit consectetur doloribus, maxime iste explicabo cupiditate provident, assumenda impedit porro modi dolorem soluta officiis suscipit. Ipsum, nemo!</p>
+            </article>
+            <article>
+                <h3>teste 2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita cupiditate soluta nemo repellendus pariatur quidem unde et dolores quod rerum sit alias eveniet fugit laborum facilis, totam, est, saepe iusto!</p>
+            </article>
+            <article>
+                <h3>teste3</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel amet eveniet dolorem porro architecto laudantium optio consequatur rerum! Magni ipsum repudiandae beatae nemo dolores sequi voluptatum tempore, eos aliquam aspernatur!</p>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="pricing" class="white-bg section" >
+    <div class="main-content top3-content">
+        <h2>pricing</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem reiciendis iusto cum, ratione distinctio placeat deserunt nobis, animi quasi pariatur sequi tempora amet quo atque nesciunt aliquid quaerat aliquam velit.</p>
+        <div class="table-responsive">
+            <table >
+                <caption><em>pricing table</em></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">title1</th>
+                        <th scope="col">title2</th>
+                        <th scope="col">title3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>content 1</td>
+                        <td>content 2</td>
+                        <td>content 3</td>
+                    </tr>
+                    <tr>
+                        <td>content 1</td>
+                        <td>content 2</td>
+                        <td>content 3</td>
+                    </tr>
+                    <tr>
+                        <td>content 1</td>
+                        <td>content 2</td>
+                        <td>content 3</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">SPAN DOWN</td>
+                        <td>content 2</td>
+                        <td>content 3</td>
+                    </tr>
+                    <tr>
+                        <td>content 2</td>
+                        <td>content 3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">footer1</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</section>
+<section id="contact" class="main-bg section" >
+    <div class="main-content intro-content">
+        <div class="intro-text-content">
+            <h2>January brings us Firefox 85</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, sint repellendus. Possimus, nam commodi fugit illum tempora blanditiis optio quidem nulla ad libero nostrum aut assumenda mollitia, esse corrupti porro!</p>
+        </div>
+        <div class="intro-img">
+            <img src="assets/img/JavaScript.svg" alt="logo de hmtl, css e JS">
+        </div>
+    </div>
+    <div class="main-content contact-form">
+        <form action="">
+            <fieldset>
+                <legend>contact-me</legend>
+                <div class="from-group1">
+                    <div class="from-group0">
+                        <label for="iname">Primeiro Nome</label>
+                        <input type="text" name="name" id="iname" placeholder="Seu primeiro nome" required>
+                    </div>
+                    <div class="from-group0">
+                        <label for="iname2">Segundo Nome</label>
+                        <input type="text" name="name2" id="iname2" placeholder="Seu segundo nome" required>
+                    </div>
+                </div>
+                <div class="from-group3">
+                    <div class="from-group2">
+                        <label for="iemail">Email</label>
+                        <input type="email" name="email" id="iemail" placeholder="Seu email" required>
+                    </div>
+                    <div class="from-group2">
+                        <label for="imsg">mensagem</label>
+                        <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="deixe uma mensagem aqui" required></textarea>
+                    </div>
+                </div>
+                    <button type="submit"> Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+</section>
 </body>
 </html>
