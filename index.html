@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
 </head>
+<input type="checkbox" name="" id="close-menu" class="close-menu" aria-label="close menu" role="button" >
+<label class="close-menu-label" for="close-menu" title="close menu"></label>
 <body class="main-bg">
     <aside class="menu">
         <div class="main-content menu-content">
-            <h1><a href="#intro">LOGO</a></h1>
+            <h1><a onclick="getElementById('close-menu').checked = false;" href="#intro">LOGO</a></h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li>
                         <a href="#top3">intro</a>
                     </li>
@@ -71,34 +73,33 @@
             </div>
         </div>
     </section>
-    <section id="gallery" class="white-bg">
-        <div class="main-content">
-            <h2>gallery</h2>
-            <p>uma breve descrição</p>
-            <div class="flex fleximg " style="margin-bottom: 20px;">
-                <div class="galleryimg">
-                    <img src="https://picsum.photos/360/360" alt="">
+        <section id="gallery" class="white-bg">
+            <div class="main-content">
+                <h2>gallery</h2>
+                <p>uma breve descrição</p>
+                <div class="flex fleximg " style="margin-bottom: 20px;">
+                    <div class="galleryimg">
+                        <img src="https://picsum.photos/360/360" alt="">
+                    </div>
+                    <div class="galleryimg">
+                        <img src="https://picsum.photos/360/360?1" alt="">
+                    </div>
+                    <div class="galleryimg">
+                        <img src="https://picsum.photos/360/360?2" alt="">
+                    </div>
                 </div>
-                <div class="galleryimg">
-                    <img src="https://picsum.photos/360/360?1" alt="">
-                </div>
-                <div class="galleryimg">
-                    <img src="https://picsum.photos/360/360?2" alt="">
-                </div>
+                    <div class="flex">
+                        <div class="galleryimg">
+                            <img src="https://picsum.photos/360/360?3" alt="">
+                        </div>
+                        <div class="galleryimg">
+                            <img src="https://picsum.photos/360/360?4" alt="">
+                        </div>
+                        <div class="galleryimg">
+                            <img src="https://picsum.photos/360/360?5" alt="">
+                        </div>
+                    </div>
             </div>
-                <div class="flex">
-                    <div class="galleryimg">
-                        <img src="https://picsum.photos/360/360?3" alt="">
-                    </div>
-                    <div class="galleryimg">
-                        <img src="https://picsum.photos/360/360?4" alt="">
-                    </div>
-                    <div class="galleryimg">
-                        <img src="https://picsum.photos/360/360?5" alt="">
-                    </div>
-                </div>
-        </div>
-    </section>
 </section>
 <section id="flex2" class="flex main-bg section">
     <div class="main-content flex-one-content">
@@ -168,7 +169,7 @@
             </table>
         </div>
     </div>
-</section>
+    </section>
 <section id="contact" class="main-bg section" >
     <div class="main-content intro-content">
         <div class="intro-text-content">
@@ -180,7 +181,7 @@
         </div>
     </div>
     <div class="main-content contact-form">
-        <form action="">
+        <form action="cadastro.php">
             <fieldset>
                 <legend>contact-me</legend>
                 <div class="from-group1">
@@ -208,5 +209,8 @@
         </form>
     </div>
 </section>
+<footer ><p>
+    feito por <a href="https://www.instagram.com/kayky_renner/" target="_blank">Kayky Renner</a>
+</p></footer>
 </body>
 </html>

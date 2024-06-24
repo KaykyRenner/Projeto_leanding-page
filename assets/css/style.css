@@ -234,6 +234,11 @@ td, th{
 tfoot{
     text-align: left;
 }
+.contact-form legend{
+    font-style: italic;
+    font-size: 0.6em;
+    margin-bottom: 20px;
+}
 .contact-form fieldset{
     gap: var(--gap);
     display: flex;
@@ -268,7 +273,6 @@ tfoot{
 input, textarea{
     font-size: 1em;
 }
-input, textarea::
 fieldset button{
     border: 0.5rem solid white;
     background: none;
@@ -283,4 +287,24 @@ fieldset button:hover{
     background: white;
     color: var(--primary-color);
 }
-
+.contact-form input:focus,.contact-form textarea:focus{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+footer{
+    text-align: center;
+    padding: 8px;
+    margin: 0px;
+    background-color: white;
+}
+footer p{
+    color: var(--primary-color);
+    margin: 0px;
+}
+footer a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: blue;
+}
